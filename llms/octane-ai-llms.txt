@@ -1,0 +1,49 @@
+# Octane AI
+
+> Octane AI is an AI-powered quiz and product-recommendation platform for Shopify merchants. It turns storefront browsers into buyers with no-code personalized quizzes, zero-party data capture, and its CORE-1 recommendation engine. Its developer surface is client-side: an embeddable quiz widget with a documented browser JavaScript event API, custom CSS/JS hooks, and a per-account API key + webhook secret for integrations and automation. There is no public REST API or OpenAPI.
+
+## Product
+- Homepage: https://octaneai.com
+- Pricing: https://octaneai.com/pricing
+- Integrations (50+): https://octaneai.com/integrations
+- Blog: https://octaneai.com/blog
+- App (login): https://app.octaneai.com/dashboard/
+- Sign up / free trial: https://app.octaneai.com/dashboard/sign-up
+
+## Developer
+- Help center: https://help.octaneai.com
+- Developer Docs collection: https://help.octaneai.com/en/collections/9496268-developer-docs
+- Developer tools & JavaScript events: https://help.octaneai.com/en/articles/6092557-understanding-the-octane-ai-developer-tools-and-javascript-events
+- Custom CSS: https://help.octaneai.com/en/articles/8179591-how-to-use-custom-css-in-your-quiz
+- Custom JavaScript (no theme edit): https://help.octaneai.com/en/articles/9149980-adding-custom-javascript-without-editing-theme-code-in-shopify
+- Programmatic opt-in submission: https://help.octaneai.com/en/articles/10306519-programmatically-submit-opt-in-information-in-your-quizzes
+- Headless store setup: https://help.octaneai.com/en/articles/10003043-how-our-clients-set-up-octane-ai-for-headless-stores
+
+## Client-side JavaScript events (octane.quiz.*)
+- octane.quiz.completed — shopper reaches the quiz results page (answers, opt-in, recommendations)
+- octane.quiz.accessed — shopper accesses a quiz results page URL
+- octane.quiz.questionLoaded — a quiz question loads
+- octane.quiz.questionAnswered — a quiz question is answered
+- octane.quiz.addToCart — add-to-cart button pressed
+- octane.quiz.addToCartError — add-to-cart action failed
+- octane.quiz.viewCart — view-cart button pressed
+- octane.quiz.goToCheckout — checkout button clicked
+- octane.quiz.goToProductPage — product-page button clicked
+
+## Integrations & automation
+- Marketing/CRM: Klaviyo, Attentive, Postscript, Recharge, Gorgias, Yotpo
+- Automation: Zapier, Alloy
+- Analytics: Google Analytics 4, Meta Pixel, VWO
+- Auth: per-account API key + webhook secret (dashboard account settings)
+
+## Company / legal
+- Terms of Service: https://octaneai.com/terms
+- Privacy Policy: https://octaneai.com/privacy
+- Support: support@octaneai.com
+- GitHub: https://github.com/octaneai
+
+## Artifacts (API Evangelist enrichment)
+- Authentication: authentication/octane-ai-authentication.yml
+- Conventions (JS events): conventions/octane-ai-conventions.yml
+- Components (quiz widget): components/octane-ai-components.yml
+- Domain security: security/octane-ai-domain-security.yml

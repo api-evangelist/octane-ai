@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: searched
+source: https://help.octaneai.com/en/collections/9496268-developer-docs
+docs: https://help.octaneai.com/en/collections/9496268-developer-docs
+summary: >-
+  Octane AI ships an embeddable, client-side quiz / product-recommendation
+  widget that merchants place on their Shopify storefront (and headless stores).
+  It is a prebuilt UI surface configured no-code in the dashboard and customized
+  via custom CSS/JS and a documented browser JavaScript event API.
+families:
+- name: Quiz widget
+  kind: embedded-ui
+  description: >-
+    Prebuilt, no-code quiz experience embedded on the storefront that drives
+    personalized product recommendations and zero-party data / opt-in capture.
+    Supports full-page and pop-up placements.
+  install:
+  - Shopify app embed (theme app extension) via the Octane AI Shopify app.
+  - Custom JavaScript embed without editing theme code.
+  - Headless storefront integration.
+  events_api:
+    namespace: octane.quiz.*
+    reference: conventions/octane-ai-conventions.yml
+  customization:
+    custom_css: true
+    custom_js: true
+- name: Pop-ups
+  kind: embedded-ui
+  description: On-site pop-up surfaces for opt-in capture and quiz entry points.
+  reference: https://help.octaneai.com/en/collections/3043649-pop-ups
+loaders:
+- description: >-
+    Octane AI storefront script injected via the Shopify theme app extension or
+    a manual custom-JavaScript snippet; no public npm/CDN element library is
+    published.

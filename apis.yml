@@ -1,8 +1,30 @@
 aid: octane-ai
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/octane-ai.png
 name: Octane AI
-description: Octane AI is a company surfaced as a portfolio company of bullpen-capital, general-catalyst
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Octane AI is an AI-powered quiz and product-recommendation platform for Shopify
+  merchants, turning storefront browsers into buyers with no-code personalized
+  quizzes, zero-party data capture, and its CORE-1 recommendation engine. It
+  integrates with 50+ marketing, CRM, and automation tools (Klaviyo, Attentive,
+  Postscript, Recharge, Gorgias, Zapier, Alloy) and syncs shopper data in real
+  time. Its developer surface is client-side rather than a public REST API: an
+  embeddable quiz widget that dispatches a documented set of browser JavaScript
+  events (octane.quiz.*), custom CSS/JS injection hooks, a headless-store
+  integration path, and a per-account API key plus webhook secret used for
+  integrations and outbound webhook verification. Backed by Bullpen Capital and
+  General Catalyst.
 url: https://raw.githubusercontent.com/api-evangelist/octane-ai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +35,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Shopify
+- E-Commerce
+- Product Recommendations
+- Quizzes
+- Personalization
+- Zero-Party Data
+- Marketing
+- Conversion Optimization
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +56,38 @@ maintainers:
 common:
 - type: Website
   url: https://octaneai.com
+- type: DeveloperPortal
+  url: https://help.octaneai.com/en/collections/9496268-developer-docs
+- type: Documentation
+  url: https://help.octaneai.com
+- type: Support
+  url: https://help.octaneai.com
+- type: Blog
+  url: https://octaneai.com/blog
+- type: Pricing
+  url: https://octaneai.com/pricing
+- type: SignUp
+  url: https://app.octaneai.com/dashboard/sign-up
+- type: Login
+  url: https://app.octaneai.com/dashboard/
+- type: TermsOfService
+  url: https://octaneai.com/terms
+- type: PrivacyPolicy
+  url: https://octaneai.com/privacy
+- type: GitHubOrganization
+  url: https://github.com/octaneai
+- type: Authentication
+  url: authentication/octane-ai-authentication.yml
+- type: Conventions
+  url: conventions/octane-ai-conventions.yml
+- type: Components
+  url: components/octane-ai-components.yml
+- type: LLMsTxt
+  url: llms/octane-ai-llms.txt
+- type: DomainSecurity
+  url: security/octane-ai-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1

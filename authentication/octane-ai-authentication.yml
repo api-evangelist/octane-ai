@@ -1,0 +1,42 @@
+generated: '2026-07-20'
+method: searched
+source: https://help.octaneai.com/en/collections/3929090-integrations
+docs: https://help.octaneai.com/en/collections/3929090-integrations
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - account-settings
+  oauth2_flows: []
+  notes: >-
+    Octane AI is a Shopify quiz / product-recommendation application. It does not
+    publish a public REST API or OpenAPI. Integration authentication is handled
+    through a per-account API key plus a webhook secret (documented in the help
+    center as "How do I find my account's API key & webhook secret?"). These
+    credentials are used by outbound integrations (Zapier, Alloy, marketing
+    platforms) and to verify inbound webhook signatures. The app itself is
+    installed and authorized via Shopify OAuth as an embedded Shopify app.
+schemes:
+- name: account_api_key
+  type: apiKey
+  in: account-settings
+  description: >-
+    Per-account API key surfaced in the Octane AI dashboard account settings,
+    used to authenticate integrations and automation platform connections.
+  sources:
+  - https://help.octaneai.com/en/collections/3929090-integrations
+- name: webhook_secret
+  type: apiKey
+  in: account-settings
+  description: >-
+    Per-account webhook signing secret used to verify the authenticity of
+    outbound webhook payloads delivered to connected integration partners.
+  sources:
+  - https://help.octaneai.com/en/collections/3929090-integrations
+- name: shopify_oauth
+  type: oauth2
+  description: >-
+    App installation and store authorization is performed through the Shopify
+    app OAuth flow when a merchant installs Octane AI from the Shopify App Store.
+  sources:
+  - https://octaneai.com/integrations

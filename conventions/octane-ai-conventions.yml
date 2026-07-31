@@ -1,0 +1,64 @@
+generated: '2026-07-20'
+method: searched
+source: https://help.octaneai.com/en/collections/9496268-developer-docs
+docs: https://help.octaneai.com/en/collections/9496268-developer-docs
+summary: >-
+  Octane AI is a Shopify quiz and product-recommendation app. Its developer
+  surface is client-side rather than a server REST API: an embeddable quiz widget
+  that dispatches a documented set of browser JavaScript events, plus custom
+  CSS/JS injection hooks and a headless integration path. Integration and
+  automation use a per-account API key + webhook secret (see authentication/).
+authentication:
+  model: account-api-key
+  detail: >-
+    Per-account API key and webhook secret for integrations/automation; Shopify
+    OAuth for app install. See authentication/octane-ai-authentication.yml.
+client_events:
+  description: >-
+    Browser JavaScript events dispatched by the Octane AI quiz widget on the
+    storefront. Developers subscribe to run custom code (dynamic content,
+    redirects, opt-in submission, analytics). These are client-side DOM/window
+    events, not server-side webhooks.
+  namespace: octane.quiz.*
+  events:
+  - name: octane.quiz.completed
+    fires_on: A shopper reaches the quiz results page; payload includes answers, opt-in info, and product recommendations.
+  - name: octane.quiz.accessed
+    fires_on: A shopper accesses a quiz results page URL.
+  - name: octane.quiz.questionLoaded
+    fires_on: A quiz question loads during a session.
+  - name: octane.quiz.questionAnswered
+    fires_on: A quiz question is answered / the shopper moves to the next page.
+  - name: octane.quiz.addToCart
+    fires_on: An add-to-cart button is pressed.
+  - name: octane.quiz.addToCartError
+    fires_on: An add-to-cart action fails.
+  - name: octane.quiz.viewCart
+    fires_on: The view-cart button is pressed (only when custom cart behavior is enabled).
+  - name: octane.quiz.goToCheckout
+    fires_on: A shopper clicks a checkout button.
+  - name: octane.quiz.goToProductPage
+    fires_on: A shopper clicks a product-page button.
+customization:
+  custom_css: https://help.octaneai.com/en/articles/8179591-how-to-use-custom-css-in-your-quiz
+  custom_js: https://help.octaneai.com/en/articles/9149980-adding-custom-javascript-without-editing-theme-code-in-shopify
+  programmatic_optin: https://help.octaneai.com/en/articles/10306519-programmatically-submit-opt-in-information-in-your-quizzes
+  headless_stores: https://help.octaneai.com/en/articles/10003043-how-our-clients-set-up-octane-ai-for-headless-stores
+webhooks:
+  documented: true
+  detail: >-
+    Octane AI issues outbound webhooks to connected integration partners,
+    verified with the per-account webhook secret. The public help center
+    documents the credentials ("API Keys & Webhooks") but does not publish a
+    machine-readable event catalog or payload schema, so no AsyncAPI/Webhooks
+    artifact is asserted here.
+idempotency:
+  supported: false
+  note: No idempotency-key contract is documented (no public REST write API).
+pagination:
+  supported: false
+versioning:
+  scheme: none-published
+cross_links:
+  authentication: authentication/octane-ai-authentication.yml
+  components: components/octane-ai-components.yml
