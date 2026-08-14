@@ -35,7 +35,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-08-13'
 tags:
 - Company
 - Shopify
@@ -60,6 +60,8 @@ common:
   url: https://help.octaneai.com/en/collections/9496268-developer-docs
 - type: Documentation
   url: https://help.octaneai.com
+- type: GettingStarted
+  url: https://help.octaneai.com/en/articles/4346619-getting-started-with-quizzes
 - type: Support
   url: https://help.octaneai.com
 - type: Blog
@@ -86,8 +88,18 @@ common:
   url: llms/octane-ai-llms.txt
 - type: DomainSecurity
   url: security/octane-ai-domain-security.yml
+- type: Webhooks
+  url: asyncapi/octane-ai-webhooks.yml
+- type: Plans
+  url: plans/octane-ai-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/octane-ai-rate-limits.yml
+- type: Lifecycle
+  url: lifecycle/octane-ai-lifecycle.yml
+- type: Conformance
+  url: conformance/octane-ai-conformance.yml
 x-enrichment:
-  date: '2026-07-20'
+  date: '2026-08-13'
   status: enriched
-  artifacts_added: 5
+  artifacts_added: 7
   pass: local-v1
