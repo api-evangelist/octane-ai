@@ -1,7 +1,7 @@
-generated: '2026-07-20'
+generated: '2026-08-13'
 method: searched
-source: https://help.octaneai.com/en/collections/3929090-integrations
-docs: https://help.octaneai.com/en/collections/3929090-integrations
+source: https://help.octaneai.com/en/articles/5679805-how-do-i-find-my-account-s-api-key-webhook-secret.md
+docs: https://help.octaneai.com/en/articles/5679805-how-do-i-find-my-account-s-api-key-webhook-secret
 summary:
   types:
   - apiKey
@@ -33,6 +33,16 @@ schemes:
     outbound webhook payloads delivered to connected integration partners.
   sources:
   - https://help.octaneai.com/en/collections/3929090-integrations
+- name: bot_id
+  type: apiKey
+  in: account-settings
+  description: >-
+    Per-account identifier ("bot ID") that scopes the API key to one Octane AI
+    account; it also appears in the account's dashboard URL. Zapier and Alloy both
+    require API key + bot ID together to authenticate a connection.
+  sources:
+  - https://help.octaneai.com/en/articles/5679805-how-do-i-find-my-account-s-api-key-webhook-secret
+  - https://help.octaneai.com/en/articles/5683555-getting-started-with-zapier
 - name: shopify_oauth
   type: oauth2
   description: >-
@@ -40,3 +50,20 @@ schemes:
     app OAuth flow when a merchant installs Octane AI from the Shopify App Store.
   sources:
   - https://octaneai.com/integrations
+credential_locations:
+- Dashboard → Settings → General settings (API key + webhook secret)
+- Dashboard → Integrations → Actions → Setup (API key + webhook secret + bot ID)
+access_gates:
+  developer_tools: >-
+    octane.quiz.* JavaScript events and custom CSS/JS require the Octane AI Plus
+    or Enterprise plan.
+  api_access: >-
+    A general "API access" capability is advertised only on the Enterprise
+    (contact-sales) tier at https://octaneai.com/pricing; no reference, base URL,
+    or authentication contract for it is published anywhere public.
+rotation_and_scoping:
+  scopes: none-published
+  rotation: not-documented
+  note: >-
+    A single API key per account, no scoping model, no documented rotation or
+    revocation flow, and no documented signature algorithm for the webhook secret.

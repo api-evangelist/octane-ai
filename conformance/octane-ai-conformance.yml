@@ -1,0 +1,62 @@
+generated: '2026-08-13'
+method: searched
+source: https://octaneai.com/privacy
+summary: >-
+  Octane AI is a Shopify app, not an API platform, so most API-layer standards do
+  not apply. Its meaningful conformance surface is the Shopify app platform and
+  the privacy/data-protection regimes it names in its own privacy policy. A SOC 2
+  claim appears only as a bullet in the Enterprise section of the pricing page —
+  there is no trust center, no certification artifact, and no report request flow,
+  so no Compliance pointer is emitted from this file.
+standards:
+- id: openapi
+  conforms: false
+  evidence: No OpenAPI/Swagger document exists on any Octane AI host (probed).
+- id: asyncapi
+  conforms: false
+  evidence: No AsyncAPI document; webhook catalog only — asyncapi/octane-ai-webhooks.yml
+- id: oauth2
+  conforms: partial
+  evidence: >-
+    Octane AI is installed and authorized as an embedded Shopify app through the
+    Shopify OAuth flow; Octane AI itself does not expose an OAuth authorization
+    server (no /.well-known/oauth-authorization-server on any host).
+- id: oidc
+  conforms: false
+  evidence: No /.well-known/openid-configuration served on any host.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No public API and no documented error envelope.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: >-
+    No security.txt on octaneai.com. The 200 at help.octaneai.com is Intercom's
+    vendor document — see well-known/octane-ai-well-known.yml.
+- id: shopify-app-platform
+  conforms: true
+  evidence: >-
+    Distributed through the Shopify App Store as an embedded app with a theme app
+    extension; uses Shopify Web Pixel for checkout attribution.
+    https://help.octaneai.com/en/articles/10003043-how-our-clients-set-up-octane-ai-for-headless-stores
+- id: gdpr
+  conforms: true
+  evidence: >-
+    Privacy policy states UK/EU GDPR rights, names a legal basis per processing
+    activity, and states a Data Privacy Officer has been appointed.
+    https://octaneai.com/privacy
+- id: ccpa-cpra
+  conforms: true
+  evidence: >-
+    Privacy policy names CCPA/CPRA plus VCDPA (VA), CPA (CO), CTDPA (CT), UCPA
+    (UT) and further US state privacy laws. https://octaneai.com/privacy
+- id: soc2
+  conforms: claimed
+  evidence: >-
+    "Enterprise Security — SOC 2 compliance & custom DPA" listed in the Enterprise
+    block of https://octaneai.com/pricing. Claim only: no trust center, no report
+    request page, no auditor or report period named.
+compliance_program:
+  published: false
+  note: >-
+    trust.octaneai.com, security.octaneai.com (NXDOMAIN) and octaneai.com/trust,
+    /security, /compliance (404) were all probed. No Compliance pointer emitted.

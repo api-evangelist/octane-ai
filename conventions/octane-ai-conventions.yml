@@ -1,4 +1,4 @@
-generated: '2026-07-20'
+generated: '2026-08-13'
 method: searched
 source: https://help.octaneai.com/en/collections/9496268-developer-docs
 docs: https://help.octaneai.com/en/collections/9496268-developer-docs
@@ -13,6 +13,19 @@ authentication:
   detail: >-
     Per-account API key and webhook secret for integrations/automation; Shopify
     OAuth for app install. See authentication/octane-ai-authentication.yml.
+availability:
+  developer_tools_plan_gate: >-
+    The Developer Tools surface — the octane.quiz.* JavaScript events and custom
+    CSS/JS — is available only on the Octane AI Plus and Enterprise plans, per the
+    developer-tools article and the pricing comparison table. Basic-plan merchants
+    have no programmable surface at all.
+  api_access_plan_gate: >-
+    "API access & custom builds" is listed only under the Enterprise (custom,
+    contact-sales) tier on https://octaneai.com/pricing. Nothing about that API is
+    published — no reference, no base URL, no self-serve path.
+  sources:
+  - https://help.octaneai.com/en/articles/6092557-understanding-the-octane-ai-developer-tools-and-javascript-events
+  - https://octaneai.com/pricing
 client_events:
   description: >-
     Browser JavaScript events dispatched by the Octane AI quiz widget on the
@@ -46,12 +59,14 @@ customization:
   headless_stores: https://help.octaneai.com/en/articles/10003043-how-our-clients-set-up-octane-ai-for-headless-stores
 webhooks:
   documented: true
+  artifact: asyncapi/octane-ai-webhooks.yml
   detail: >-
-    Octane AI issues outbound webhooks to connected integration partners,
-    verified with the per-account webhook secret. The public help center
-    documents the credentials ("API Keys & Webhooks") but does not publish a
-    machine-readable event catalog or payload schema, so no AsyncAPI/Webhooks
-    artifact is asserted here.
+    Octane AI issues outbound customer events to connected automation partners
+    (Zapier, Alloy), authenticated with the per-account API key + bot ID and
+    verified with the per-account webhook secret. Two events are documented by
+    name — Customer Created and Customer Updated. No payload schema, signature
+    algorithm, retry policy, or subscription API is published, so the captured
+    artifact is a webhook catalog (type Webhooks), not an AsyncAPI document.
 idempotency:
   supported: false
   note: No idempotency-key contract is documented (no public REST write API).
@@ -62,3 +77,8 @@ versioning:
 cross_links:
   authentication: authentication/octane-ai-authentication.yml
   components: components/octane-ai-components.yml
+  webhooks: asyncapi/octane-ai-webhooks.yml
+  rate_limits: rate-limits/octane-ai-rate-limits.yml
+  plans: plans/octane-ai-plans-pricing.yml
+  lifecycle: lifecycle/octane-ai-lifecycle.yml
+  conformance: conformance/octane-ai-conformance.yml

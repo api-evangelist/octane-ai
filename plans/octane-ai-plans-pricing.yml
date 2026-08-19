@@ -1,0 +1,84 @@
+generated: '2026-08-13'
+method: searched
+source: https://octaneai.com/pricing
+docs: https://octaneai.com/pricing
+currency: USD
+billing_periods: [monthly, yearly]
+plan_count: 4
+model: >-
+  Credit-based subscription. 1 credit = 1 quiz engagement (a completed quiz);
+  AI features consume additional fractional credits per interaction
+  (Smart Products ~0.3, Smart Copy ~0.1, Image Analyzer ~0.2). Overage is billed
+  at $0.10 per credit at the end of the billing cycle; unused credits roll over
+  for 30 days. Yearly billing saves 15%.
+trial:
+  available: true
+  length_days: 14
+  detail: Full feature access on the chosen plan; cancel anytime.
+plans:
+- name: Octane AI Basic
+  price: 50
+  price_yearly_monthly_equivalent: 43
+  currency: USD
+  period: month
+  included_credits: 400
+  overage: $0.10 per credit
+  limits:
+  - Limited to two quizzes
+  features:
+  - Pop-ups & opt-ins
+  - Klaviyo & Shopify sync
+  - AI features included
+  - Analytics
+  - Enhanced integrations
+  - Email support
+- name: Octane AI Plus
+  price: 200
+  price_yearly_monthly_equivalent: 170
+  currency: USD
+  period: month
+  included_credits: 2200
+  overage: $0.10 per credit
+  most_popular: true
+  features:
+  - Everything in Octane AI Basic
+  - Unlimited quizzes
+  - A/B testing
+  - More credits for AI usage
+  - Custom CSS
+  - Developer tools (JS events and custom CSS)
+- name: Octane AI Enterprise & Unlimited
+  price: 500
+  price_note: from $500/month ("$500+")
+  price_yearly_monthly_equivalent: 425
+  currency: USD
+  period: month
+  included_credits: 7250
+  included_credits_note: 7,250+ credits or unlimited
+  features:
+  - Everything in Octane AI Plus
+  - Dedicated Account Manager
+  - Quiz strategy & optimization guidance
+  - Email flow blueprints & best practices
+  - Custom onboarding
+  - Monthly strategy calls
+  - Developer tools (JS events and custom CSS)
+- name: Enterprise (custom)
+  price: null
+  period: null
+  sales_gated: true
+  contact: https://octaneai.com/contact
+  features:
+  - Unlimited credits — no usage limits or overages
+  - Enterprise security — SOC 2 compliance & custom DPA
+  - Dedicated support — Slack channel & phone support
+  - Custom integrations — API access & custom builds
+  note: >-
+    The only tier on which Octane AI advertises "API access". It is quoted, not
+    published: there is no public API reference, no baseURL, and no self-serve
+    path to it. This is the wall recorded in x-coverage (gated / sales-gate).
+notes:
+- >-
+  Developer tools (the octane.quiz.* JavaScript event surface and custom CSS/JS)
+  are gated to the Octane AI Plus and Enterprise plans per
+  https://help.octaneai.com/en/articles/6092557-understanding-the-octane-ai-developer-tools-and-javascript-events

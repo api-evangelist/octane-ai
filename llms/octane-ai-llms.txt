@@ -1,49 +1,174 @@
-# Octane AI
+# Octane AI Help Center
 
-> Octane AI is an AI-powered quiz and product-recommendation platform for Shopify merchants. It turns storefront browsers into buyers with no-code personalized quizzes, zero-party data capture, and its CORE-1 recommendation engine. Its developer surface is client-side: an embeddable quiz widget with a documented browser JavaScript event API, custom CSS/JS hooks, and a per-account API key + webhook secret for integrations and automation. There is no public REST API or OpenAPI.
+> Help center for Octane AI
 
-## Product
-- Homepage: https://octaneai.com
-- Pricing: https://octaneai.com/pricing
-- Integrations (50+): https://octaneai.com/integrations
-- Blog: https://octaneai.com/blog
-- App (login): https://app.octaneai.com/dashboard/
-- Sign up / free trial: https://app.octaneai.com/dashboard/sign-up
+## CORE-1
 
-## Developer
-- Help center: https://help.octaneai.com
-- Developer Docs collection: https://help.octaneai.com/en/collections/9496268-developer-docs
-- Developer tools & JavaScript events: https://help.octaneai.com/en/articles/6092557-understanding-the-octane-ai-developer-tools-and-javascript-events
-- Custom CSS: https://help.octaneai.com/en/articles/8179591-how-to-use-custom-css-in-your-quiz
-- Custom JavaScript (no theme edit): https://help.octaneai.com/en/articles/9149980-adding-custom-javascript-without-editing-theme-code-in-shopify
-- Programmatic opt-in submission: https://help.octaneai.com/en/articles/10306519-programmatically-submit-opt-in-information-in-your-quizzes
-- Headless store setup: https://help.octaneai.com/en/articles/10003043-how-our-clients-set-up-octane-ai-for-headless-stores
+- [Introduction to CORE-1: Octane AI’s Intelligence Engine](https://help.octaneai.com/en/articles/12803367-introduction-to-core-1-octane-ai-s-intelligence-engine.md): Learn how CORE-1 understands your products, your brand, and your shoppers to deliver personalized recommendations.
+- [How to Use Smart Products](https://help.octaneai.com/en/articles/11779138-how-to-use-smart-products.md): Give out detailed instructions to our AI in order to generate your perfect product recommendations.
+- [Getting Started with Smart Copy](https://help.octaneai.com/en/articles/10336245-getting-started-with-smart-copy.md): Have AI generate the text in your quizzes' results pages based on your customer's answers and their recommended products.
+- [How to Use Smart Properties](https://help.octaneai.com/en/articles/11932139-how-to-use-smart-properties.md): Generate AI text based on your prompts and the quiz information. Add it to your results pages HTML blocks and send it to your integrations.
+- [How to Use the Image Analyzer Question Type in Your Quiz](https://help.octaneai.com/en/articles/11780504-how-to-use-the-image-analyzer-question-type-in-your-quiz.md): Use the Image Analyzer question type to let shoppers upload or take a photo. Our AI will then analyze the image and return personalized results based on your prompt. Perfect for shade matching, sty...
+- [How to Use the Page Wizard in Your Quiz](https://help.octaneai.com/en/articles/12883490-how-to-use-the-page-wizard-in-your-quiz.md): Use AI to help you create your quiz question and informational pages based on your instructions.
+- [Using Shopping Assistant to Publish Your Quizzes](https://help.octaneai.com/en/articles/11898166-using-shopping-assistant-to-publish-your-quizzes.md): With just a few clicks, you can feature one or more quizzes in a beautiful popup-style assistant that appears on your website as a widget.
 
-## Client-side JavaScript events (octane.quiz.*)
-- octane.quiz.completed — shopper reaches the quiz results page (answers, opt-in, recommendations)
-- octane.quiz.accessed — shopper accesses a quiz results page URL
-- octane.quiz.questionLoaded — a quiz question loads
-- octane.quiz.questionAnswered — a quiz question is answered
-- octane.quiz.addToCart — add-to-cart button pressed
-- octane.quiz.addToCartError — add-to-cart action failed
-- octane.quiz.viewCart — view-cart button pressed
-- octane.quiz.goToCheckout — checkout button clicked
-- octane.quiz.goToProductPage — product-page button clicked
+## Quizzes
 
-## Integrations & automation
-- Marketing/CRM: Klaviyo, Attentive, Postscript, Recharge, Gorgias, Yotpo
-- Automation: Zapier, Alloy
-- Analytics: Google Analytics 4, Meta Pixel, VWO
-- Auth: per-account API key + webhook secret (dashboard account settings)
+- [Getting Started with Quizzes](https://help.octaneai.com/en/articles/4346619-getting-started-with-quizzes.md): Where to start if you're new to building quizzes in Octane AI.
+- [How to Use the AI Quiz Generator](https://help.octaneai.com/en/articles/10395389-how-to-use-the-ai-quiz-generator.md): Save time and effort by having AI generate your quiz based on your prompts
+- [Adding Pages to Your Quiz](https://help.octaneai.com/en/articles/4346571-adding-pages-to-your-quiz.md): How to add pages to your quiz, and when to use each one.
+- [Use One Page for Multiple Quiz Questions](https://help.octaneai.com/en/articles/12089860-use-one-page-for-multiple-quiz-questions.md): Question Pages give you the flexibility to group multiple questions into a single page of your quiz.
+- [Best Practices for the First Question in Your Quiz](https://help.octaneai.com/en/articles/7860821-best-practices-for-the-first-question-in-your-quiz.md): Best practices for designing the content of the 1st question in your quiz.
+- [Collecting Dates in Quizzes with the Date Picker Question](https://help.octaneai.com/en/articles/8400387-collecting-dates-in-quizzes-with-the-date-picker-question.md): \#birthday \#dates \#date-picker \#quiz
+- [Using a Back Button in Quizzes](https://help.octaneai.com/en/articles/6085778-using-a-back-button-in-quizzes.md): How to create and customize a back button in your quiz.
+- [Adding a Market Consent Checkbox to Opt-ins](https://help.octaneai.com/en/articles/8971957-adding-a-market-consent-checkbox-to-opt-ins.md): \#gdpr \#opt-ins \#quiz
+- [Adding a Continue or Skip Button to Questions](https://help.octaneai.com/en/articles/9009812-adding-a-continue-or-skip-button-to-questions.md): \#buttons \#questions \#quiz
+- [Using Variables to Display Quiz Answers in Quiz Content](https://help.octaneai.com/en/articles/9714024-using-variables-to-display-quiz-answers-in-quiz-content.md): \#quiz \#variables
+- [Building Results Pages with Content Blocks](https://help.octaneai.com/en/articles/4333461-building-results-pages-with-content-blocks.md): Customize your results page to achieve the perfect look for your quiz
+- [Customizing Products in Quizzes](https://help.octaneai.com/en/articles/6040992-customizing-products-in-quizzes.md): How to find and use the settings that allow you to control product formatting, buttons & content in results pages.
+- [Customizing the Add to Cart Button](https://help.octaneai.com/en/articles/8474522-customizing-the-add-to-cart-button.md): \#addtocart \#quizzes \#quizresults
+- [How to Recommend Product Variants Separately](https://help.octaneai.com/en/articles/8602324-how-to-recommend-product-variants-separately.md): \#dynamic-quiz \#quizzes \#results \#variants
+- [Redirecting to a Custom URL for Quiz Results using a Button](https://help.octaneai.com/en/articles/9038246-redirecting-to-a-custom-url-for-quiz-results-using-a-button.md): \#buttons \#quiz \#results
+- [Displaying Metafields on Your Quiz Product Results](https://help.octaneai.com/en/articles/11381025-displaying-metafields-on-your-quiz-product-results.md): Learn how to show metafields from your store products on your quiz product results, such as color swatches for product variants.
+- [How to Set Up Your Quiz Results](https://help.octaneai.com/en/articles/11824901-how-to-set-up-your-quiz-results.md): How each of Octane AI's quiz results types work and when to choose the right type of logic for you.
+- [Customizing Quiz Behavior with Advanced Logic](https://help.octaneai.com/en/articles/4766243-customizing-quiz-behavior-with-advanced-logic.md): Change question paths and create conditional content with advanced logic.
+- [How to Use Points in Your Quiz](https://help.octaneai.com/en/articles/13016320-how-to-use-points-in-your-quiz.md): Assign points to answers, set up different point dimensions, and display content conditionally based on the number of points that were scored.
+- [Using Quiz Design Settings](https://help.octaneai.com/en/articles/4957727-using-quiz-design-settings.md): How to use your quiz's design settings to their fullest.
+- [Font Sizes in Quizzes](https://help.octaneai.com/en/articles/5647235-font-sizes-in-quizzes.md): Exact font sizes for Small, Medium and Large font sizes.
+- [Formatting Image Content for Octane AI](https://help.octaneai.com/en/articles/4263541-formatting-image-content-for-octane-ai.md): The ideal image sizes with different features across Octane AI
+- [How to Use the Progress Bar in Your Quiz](https://help.octaneai.com/en/articles/14038857-how-to-use-the-progress-bar-in-your-quiz.md): Build a beautiful progress bar in your quiz to show what step the customer is it in the quiz.
+- [Introduction to Custom Properties](https://help.octaneai.com/en/articles/5510035-introduction-to-custom-properties.md): Sync and target customer data across Octane AI's integrations to segment, automate and more.
+- [How to Export Quiz Responses](https://help.octaneai.com/en/articles/8038255-how-to-export-quiz-responses.md): \#csv \#export \#quiz \#quiz-responses
+- [Creating a Quiz A/B Test](https://help.octaneai.com/en/articles/8842886-creating-a-quiz-a-b-test.md): \#ab-testing \#analytics \#quiz
+- [A/B Testing Quizzes through Pop-ups](https://help.octaneai.com/en/articles/8448264-a-b-testing-quizzes-through-pop-ups.md): \#ab-testing \#pop-ups \#quizzes
+- [A/B Testing FAQ \(Frequently Asked Questions\)](https://help.octaneai.com/en/articles/8843190-a-b-testing-faq-frequently-asked-questions.md)
+- [How to publish your Octane AI quiz](https://help.octaneai.com/en/articles/4346590-how-to-publish-your-octane-ai-quiz.md): \#embed \#quiz \#publish \#shopify-page
+- [How to Publish & Edit Pop-up Quizzes](https://help.octaneai.com/en/articles/5138424-how-to-publish-edit-pop-up-quizzes.md): Embedding & publishing your quiz in a pop-up, and how to edit the pop-up.
+- [How Saving Quizzes Works in Octane AI](https://help.octaneai.com/en/articles/8457294-how-saving-quizzes-works-in-octane-ai.md): \#autosave \#quiz \#saving
+- [Troubleshooting Quiz Save Errors](https://help.octaneai.com/en/articles/4596779-troubleshooting-quiz-save-errors.md): What you can do if you're not able to save your quiz.
+- [How to Add Your Quiz to Tapcart](https://help.octaneai.com/en/articles/12532619-how-to-add-your-quiz-to-tapcart.md): Use our Tapcart integration to embed your quiz inside your store app
+- [How to Preview Your Quiz](https://help.octaneai.com/en/articles/5979099-how-to-preview-your-quiz.md): Instructions on previewing your quiz in Octane AI as well as on your website.
+- [How to Set Up Discounts in Your Quiz](https://help.octaneai.com/en/articles/6623823-how-to-set-up-discounts-in-your-quiz.md): Use the Discounts tab in the quiz editor to set up dynamic discounts that can be automatically applied to the customer's checkout once they complete the quiz. You can also use the discount code man...
+- [How to Add Side Images to a Quiz Page](https://help.octaneai.com/en/articles/6478996-how-to-add-side-images-to-a-quiz-page.md): Side images add greater visual interest to your quiz, helping it stand out and reinforce your brand’s unique aesthetic.
+- [How to Compare Analytics Between Quizzes](https://help.octaneai.com/en/articles/8389890-how-to-compare-analytics-between-quizzes.md): \#ab-testing \#analytics \#quizzes
+- [How to Create Transition Pages with Explainer Screens](https://help.octaneai.com/en/articles/5228463-how-to-create-transition-pages-with-explainer-screens.md): Transition pages are pages that display information between questions or a loading page in your quiz.
+- [How to Add a Quiz to the Order Status Page in Shopify](https://help.octaneai.com/en/articles/6805083-how-to-add-a-quiz-to-the-order-status-page-in-shopify.md): Use this guide to publish an Octane AI quiz to Shopify's order status page which appears post-purchase.
+- [Hiding Out of Stock Products in Quizzes](https://help.octaneai.com/en/articles/6925572-hiding-out-of-stock-products-in-quizzes.md): Hiding products that are out of stock from your collections and tags
+- [Creating a quiz without product recommendations](https://help.octaneai.com/en/articles/7860510-creating-a-quiz-without-product-recommendations.md): How to make a quiz that doesn't recommend products in the quiz.
+- [Creating a Loading Page for the Shareable Result Page URL](https://help.octaneai.com/en/articles/6687903-creating-a-loading-page-for-the-shareable-result-page-url.md): How to edit the loading page that appears when a customer accesses their result page URL.
+- [How to Add Buttons to a Quiz](https://help.octaneai.com/en/articles/7995886-how-to-add-buttons-to-a-quiz.md): \#adding-content \#quiz \#step-by-step
+- [How to use the Octane AI quiz editor](https://help.octaneai.com/en/articles/10546984-how-to-use-the-octane-ai-quiz-editor.md): On February 11, 2025, we released a new and improved editor designed to make features easier to find.
+- [Adding Content to Your Quiz Questions and Results Pages](https://help.octaneai.com/en/articles/11067133-adding-content-to-your-quiz-questions-and-results-pages.md): How to add and set up different types of content to your quiz
+- [How to use HTML blocks in your quizzes](https://help.octaneai.com/en/articles/11157533-how-to-use-html-blocks-in-your-quizzes.md): Customize your quiz with progress bars, forms, animations, interactive widgets, and much more
+- [How to Use the Variant Matrix](https://help.octaneai.com/en/articles/13120088-how-to-use-the-variant-matrix.md): Set up a matrix to match the exact product variants according to the customer's answers.
+- [Quiz Accessibility](https://help.octaneai.com/en/articles/6476123-quiz-accessibility.md): Alt text and keyboard accessibility help customers of all abilities take your quiz.
+- [How do I let customers retake my quiz?](https://help.octaneai.com/en/articles/7237070-how-do-i-let-customers-retake-my-quiz.md): Add a start over button to your results pages that will give your customers a chance to take your quiz again
+- [How do I remove the title from a Shopify page?](https://help.octaneai.com/en/articles/5300499-how-do-i-remove-the-title-from-a-shopify-page.md): Display your quiz without a page title.
+- [How do I add product descriptions to my quiz?](https://help.octaneai.com/en/articles/7833459-how-do-i-add-product-descriptions-to-my-quiz.md): How to find the DISPLAY SETTINGS menu for your products
+- [How do I translate my quiz into other languages?](https://help.octaneai.com/en/articles/7828567-how-do-i-translate-my-quiz-into-other-languages.md): Using 3rd party tools to translate quizzes and other website content in Shopify
+- [Why aren't products showing up when taking my quiz?](https://help.octaneai.com/en/articles/8031713-why-aren-t-products-showing-up-when-taking-my-quiz.md): \#product-recommendations \#quiz \#quiz-rules
+- [I'm having trouble changing my quiz background color](https://help.octaneai.com/en/articles/8302505-i-m-having-trouble-changing-my-quiz-background-color.md)
+- [The add to cart button doesn't update the shopping cart icon](https://help.octaneai.com/en/articles/8038287-the-add-to-cart-button-doesn-t-update-the-shopping-cart-icon.md): \#add-to-cart \#buttons \#quiz \#shopping-cart
 
-## Company / legal
-- Terms of Service: https://octaneai.com/terms
-- Privacy Policy: https://octaneai.com/privacy
-- Support: support@octaneai.com
-- GitHub: https://github.com/octaneai
+## Pop-ups
 
-## Artifacts (API Evangelist enrichment)
-- Authentication: authentication/octane-ai-authentication.yml
-- Conventions (JS events): conventions/octane-ai-conventions.yml
-- Components (quiz widget): components/octane-ai-components.yml
-- Domain security: security/octane-ai-domain-security.yml
+- [Getting Started with Octane AI Pop-ups](https://help.octaneai.com/en/articles/4445647-getting-started-with-octane-ai-pop-ups.md): Boost revenue and collect opt-ins & quiz data with pop-ups that feature quizzes and more.
+- [Best Practices for Pop-up Quizzes](https://help.octaneai.com/en/articles/8400004-best-practices-for-pop-up-quizzes.md)
+- [Using a Welcome Pop-up](https://help.octaneai.com/en/articles/2343082-using-a-welcome-pop-up.md): Get more subscribers with our welcome pop-up
+- [Using an Exit Intent Pop-up](https://help.octaneai.com/en/articles/3311166-using-an-exit-intent-pop-up.md): Encourage opt-ins when customers intend to leave your site
+- [Using an Add to Cart Pop-up](https://help.octaneai.com/en/articles/2784998-using-an-add-to-cart-pop-up.md): Grow your audience and opt in more subscribers with the add to cart pop-up
+- [Guide to Creating a Conversational Pop-up](https://help.octaneai.com/en/articles/5388253-guide-to-creating-a-conversational-pop-up.md): How to use Octane AI's Shop Quiz tool to create pop-ups with interactive content.
+- [Creating an Opt-in Pop-up with a Discount](https://help.octaneai.com/en/articles/4697803-creating-an-opt-in-pop-up-with-a-discount.md): How discount codes work with your Octane AI pop-ups, and best practices.
+- [Creating a Pop-up with a Custom Link](https://help.octaneai.com/en/articles/6372113-creating-a-pop-up-with-a-custom-link.md): Adding a custom Click to Action to an Octane AI pop-up.
+- [Designing Opt-in Pop-ups](https://help.octaneai.com/en/articles/8602214-designing-opt-in-pop-ups.md): \#design \#popups \#quiz
+- [A/B Test Your Non-Quiz Pop-Ups](https://help.octaneai.com/en/articles/3368275-a-b-test-your-non-quiz-pop-ups.md): Run A/B tests on your pop-ups with different images, messaging, or settings in order to increase your opt-ins.
+- [Customizing Pop-up Behavior with Targeting Settings](https://help.octaneai.com/en/articles/5733807-customizing-pop-up-behavior-with-targeting-settings.md): Using Placement settings to customize where and how your Octane AI pop-ups appear.
+- [Exclude Hash Changes in URL on Mobile Devices](https://help.octaneai.com/en/articles/5698033-exclude-hash-changes-in-url-on-mobile-devices.md): Use this option to troubleshoot odd pop-up placement and timings on mobile devices.
+
+## Integrations
+
+- [Getting Started with Klaviyo](https://help.octaneai.com/en/articles/1866465-getting-started-with-klaviyo.md): How to connect and use our Klaviyo integration to send personalized flows.
+- [How to Enable the Octane AI / Klaviyo Integration](https://help.octaneai.com/en/articles/7000377-how-to-enable-the-octane-ai-klaviyo-integration.md): Follow these quick steps to connect Octane AI & Klaviyo.
+- [Getting Started with Klaviyo SMS & MMS](https://help.octaneai.com/en/articles/6809843-getting-started-with-klaviyo-sms-mms.md): Using Octane AI to personalize your SMS & MMS messaging in Klaviyo
+- [Sending Email & SMS Opt-ins to Klaviyo](https://help.octaneai.com/en/articles/5722139-sending-email-sms-opt-ins-to-klaviyo.md): Use Octane AI's integration to keep your email & SMS opt-ins synced with Klaviyo along with key zero-party data.
+- [Creating a Quiz Results Flow in Klaviyo](https://help.octaneai.com/en/articles/8695257-creating-a-quiz-results-flow-in-klaviyo.md): \#integrations \#klaviyo \#quiz-flow \#quiz-email
+- [Triggering Klaviyo Flows when Someone is Added to a List / Segment](https://help.octaneai.com/en/articles/5831006-triggering-klaviyo-flows-when-someone-is-added-to-a-list-segment.md): \#custom-properties \#data \#integrations \#klaviyo \#quiz \#step-by-step
+- [Triggering Klaviyo Flows with Collected Dates](https://help.octaneai.com/en/articles/8426091-triggering-klaviyo-flows-with-collected-dates.md): \#birthday \#date \#date-picker \#klaviyo \#quiz
+- [How to Personalize Klaviyo with Octane AI Data](https://help.octaneai.com/en/articles/5866937-how-to-personalize-klaviyo-with-octane-ai-data.md): \#data \#integrations \#klaviyo \#personalization \#quiz
+- [Adding Product Recommendations to a Klaviyo Email with Dynamic Blocks](https://help.octaneai.com/en/articles/5859883-adding-product-recommendations-to-a-klaviyo-email-with-dynamic-blocks.md): \#integrations \#klaviyo \#personalization \#quiz \#step-by-step
+- [Adding Product Recommendations to a Klaviyo Email with Content Blocks](https://help.octaneai.com/en/articles/8895578-adding-product-recommendations-to-a-klaviyo-email-with-content-blocks.md): \#integrations \#klaviyo \#quiz
+- [Collecting Names for Klaviyo in Octane AI](https://help.octaneai.com/en/articles/9031751-collecting-names-for-klaviyo-in-octane-ai.md): \#integrations \#klaviyo \#quiz
+- [Passing Custom Properties to Klaviyo with Developer Tools](https://help.octaneai.com/en/articles/9101998-passing-custom-properties-to-klaviyo-with-developer-tools.md)
+- [Customizing Octane AI Data in Klaviyo Templates with Filters](https://help.octaneai.com/en/articles/9001192-customizing-octane-ai-data-in-klaviyo-templates-with-filters.md): \#integrations \#klaviyo \#quiz
+- [Easy step-by-step guide to set up quiz results email flow](https://help.octaneai.com/en/articles/8807293-easy-step-by-step-guide-to-set-up-quiz-results-email-flow.md): Follow 7 quick steps to create your quiz results email
+- [Using recommended products custom property to segment Klaviyo flows](https://help.octaneai.com/en/articles/11088073-using-recommended-products-custom-property-to-segment-klaviyo-flows.md): You can use recommended products custom property to create segments, to set conditional logic, and add profile filters
+- [Getting Started with Attentive](https://help.octaneai.com/en/articles/6746669-getting-started-with-attentive.md): A guide to setting up Octane AI's Attentive integration
+- [How to Set Up an Attentive Source ID for Octane AI](https://help.octaneai.com/en/articles/6821274-how-to-set-up-an-attentive-source-id-for-octane-ai.md): Setting up Octane AI to collect compliant opt-ins with Attentive.
+- [Guide to Using Octane Data to Create Segments in Attentive](https://help.octaneai.com/en/articles/6787001-guide-to-using-octane-data-to-create-segments-in-attentive.md): Using Octane Quiz Data to filter Attentive segments
+- [Guide to Creating Journeys at Attentive with Octane Data](https://help.octaneai.com/en/articles/6787120-guide-to-creating-journeys-at-attentive-with-octane-data.md): Trigger flows on quiz completion and send result page URLs with this feature.
+- [Overview of the Postscript Integration](https://help.octaneai.com/en/articles/9588723-overview-of-the-postscript-integration.md): \#postscript \#quiz \#sms
+- [Ensuring Your SMS Opt-in is Compliant for Postscript](https://help.octaneai.com/en/articles/9590395-ensuring-your-sms-opt-in-is-compliant-for-postscript.md): \#compliance \#postscript \#quiz \#sms
+- [Setting Up a Keyword for Octane AI](https://help.octaneai.com/en/articles/9596664-setting-up-a-keyword-for-octane-ai.md): \#keyword \#opt-in \#postscript \#quiz \#sms
+- [Setting Up a Quiz Automation in Postscript](https://help.octaneai.com/en/articles/9596744-setting-up-a-quiz-automation-in-postscript.md): \#automation \#opt-in \#postscript \#quiz \#sms \#welcome-flow
+- [Octane AI's Recart Integration](https://help.octaneai.com/en/articles/10072961-octane-ai-s-recart-integration.md): How to connect and use our Recart integration to send personalized messages to your quiz subscribers.
+- [How to use Shopify Markets integration](https://help.octaneai.com/en/articles/11163207-how-to-use-shopify-markets-integration.md): Clients who use Shopify Markets can now have one quiz on the primary store and use it across all markets
+- [Using Octane AI Quizzes with Shopify Subscription Apps](https://help.octaneai.com/en/articles/10011283-using-octane-ai-quizzes-with-shopify-subscription-apps.md): Octane AI integration with Recharge, Loop, Skio, Stay AI, Smartrr, and other subscription apps
+- [Using Google Analytics with an Octane AI Quiz](https://help.octaneai.com/en/articles/6706505-using-google-analytics-with-an-octane-ai-quiz.md): Create events for quiz actions, answers and result pages that can be tracked using Google Analytics.
+- [A/B Testing Octane AI through VWO](https://help.octaneai.com/en/articles/8451079-a-b-testing-octane-ai-through-vwo.md): \#ab-testing \#quizzes
+- [How to Compare Website Sessions from Quiz Takers in Google Analytics](https://help.octaneai.com/en/articles/8673181-how-to-compare-website-sessions-from-quiz-takers-in-google-analytics.md): \#conversions \#google-analytics \#quiz \#revenue
+- [Tracking Quiz Events with the Meta Pixel](https://help.octaneai.com/en/articles/4646180-tracking-quiz-events-with-the-meta-pixel.md): Using Octane AI's Meta Pixel integration to engage users based on customer behavior
+- [Getting Started with Zapier](https://help.octaneai.com/en/articles/5683555-getting-started-with-zapier.md): Use Octane AI's Zapier integration to connect Octane AI with Zapier's extensive network of apps.
+- [Getting Started with Alloy](https://help.octaneai.com/en/articles/5509700-getting-started-with-alloy.md): Use Alloy automations to integrate and improve your workflows.
+- [How to Get a Shareable URL / Link for Quiz Results](https://help.octaneai.com/en/articles/5878831-how-to-get-a-shareable-url-link-for-quiz-results.md): Octane users will have a shareable link generated for each result that customers see, for dynamic and custom results.
+- [Adding a Button to Emails in HTML in Klaviyo](https://help.octaneai.com/en/articles/7904286-adding-a-button-to-emails-in-html-in-klaviyo.md): Use this guide as an example of how to add a button in HTML to Klaviyo emails with a quiz results link.
+- [How to Create a Segment in Klaviyo with Octane AI Data](https://help.octaneai.com/en/articles/4346580-how-to-create-a-segment-in-klaviyo-with-octane-ai-data.md): In this guide, we'll make a segment of people who finished a quiz as an example.
+- [Creating Alloy Recipes for Omnisend & Mailchimp](https://help.octaneai.com/en/articles/5662315-creating-alloy-recipes-for-omnisend-mailchimp.md): Using pre-built recipes in Alloy to send your Octane AI zero-party data into Omnisend or Mailchimp.
+- [Turning Quiz Events into Custom Conversions in Meta Events Manager](https://help.octaneai.com/en/articles/5043068-turning-quiz-events-into-custom-conversions-in-meta-events-manager.md): How to add Octane AI custom events into the Aggregated Events Measurement menu
+- [Troubleshooting Common Klaviyo Issues](https://help.octaneai.com/en/articles/5884302-troubleshooting-common-klaviyo-issues.md): Best practices for testing and troubleshooting Octane AI's integration with Klaviyo.
+- [How do I find my account's API key & webhook secret?](https://help.octaneai.com/en/articles/5679805-how-do-i-find-my-account-s-api-key-webhook-secret.md): Understanding how to access and use your account credentials to integrate with platforms like Zapier and Alloy.
+- [My quiz data isn't showing up in Klaviyo](https://help.octaneai.com/en/articles/7000364-my-quiz-data-isn-t-showing-up-in-klaviyo.md): Follow this troubleshooting guide if you're not seeing data flow into Klaviyo.
+- [My Meta pixel isn't showing events from the quiz](https://help.octaneai.com/en/articles/4945068-my-meta-pixel-isn-t-showing-events-from-the-quiz.md): Making sure your Meta pixel is prepared to track anonymous users across key events.
+- [Getting Started with Gorgias](https://help.octaneai.com/en/articles/12745386-getting-started-with-gorgias.md): Learn how to activate and use the Gorgias integration with Octane AI. Sync customers' quiz data to your helpdesk.
+- [Exporting Reviews from Judge.me](https://help.octaneai.com/en/articles/7933960-exporting-reviews-from-judge-me.md): How to export your reviews in CSV format from Judge.me.
+- [Exporting Reviews from Junip](https://help.octaneai.com/en/articles/7932487-exporting-reviews-from-junip.md): How to acquire Junip reviews in a CSV format compatible with Insights AI
+- [Exporting Reviews from Loox](https://help.octaneai.com/en/articles/7932802-exporting-reviews-from-loox.md): How to export a CSV file of reviews from Loox.
+- [Exporting Reviews from Okendo](https://help.octaneai.com/en/articles/7932726-exporting-reviews-from-okendo.md): How to export reviews from Okendo in CSV format.
+- [Exporting Reviews from Reviews.io](https://help.octaneai.com/en/articles/7933995-exporting-reviews-from-reviews-io.md): How to export your Reviews.io reviews in CSV format.
+- [Exporting Reviews from Shopify](https://help.octaneai.com/en/articles/7934070-exporting-reviews-from-shopify.md): Exporting your Shopify reviews in CSV format.
+- [Exporting Reviews from Stamped.io](https://help.octaneai.com/en/articles/7934032-exporting-reviews-from-stamped-io.md): Exporting reviews from Stamped.io in CSV format.
+- [Exporting Reviews from Yotpo](https://help.octaneai.com/en/articles/7934129-exporting-reviews-from-yotpo.md): Exporting your Yotpo reviews in CSV format.
+- [Sync Quiz Answers to Customer Metafields in Shopify](https://help.octaneai.com/en/articles/14500547-sync-quiz-answers-to-customer-metafields-in-shopify.md): Sync the customer answers from your quiz to their Customer Metafields in Shopify. This will allow you to use them for things such as email campaigns in Shopify Messaging.
+- [Using the Shop Integration in Quizzes](https://help.octaneai.com/en/articles/6685087-using-the-shop-integration-in-quizzes.md): Adding a Shop Discount Wallet to your store to offer automatic discounts in return for opt-ins.
+- [Tagging Customers in Shopify on Quiz Completion](https://help.octaneai.com/en/articles/6719972-tagging-customers-in-shopify-on-quiz-completion.md): How Octane AI tags customers in Shopify that finishes one of your quizzes.
+
+## Analytics & Accounts
+
+- [Adding Octane AI to your Shopify Store](https://help.octaneai.com/en/articles/3017570-adding-octane-ai-to-your-shopify-store.md): Optional: How you can download and install Octane AI to your Shopify store
+- [Octane AI Facebook Messenger + Ads Deprecation \[LEGACY\]](https://help.octaneai.com/en/articles/6396486-octane-ai-facebook-messenger-ads-deprecation-legacy.md): Octane AI deprecated Facebook Messenger and Ads features on September 27, 2022.
+- [Octane AI Plans and Pricing: Credits System](https://help.octaneai.com/en/articles/2404075-octane-ai-plans-and-pricing-credits-system.md): How credits are calculated
+- [What Is Zero-Party Data?](https://help.octaneai.com/en/articles/5715532-what-is-zero-party-data.md): Collecting customer insights and powering up your marketing with trust, transparency and autonomy.
+- [How to Collect and Use Zero-Party Data in Octane AI](https://help.octaneai.com/en/articles/5715542-how-to-collect-and-use-zero-party-data-in-octane-ai.md): How Octane AI can funnel zero-party data to the marketing channel that you own.
+- [Getting to Know Your Octane AI Analytics](https://help.octaneai.com/en/articles/1866481-getting-to-know-your-octane-ai-analytics.md): How to track performance and stats across your Octane AI account
+- [How Octane AI Revenue & Quiz Analytics are Tracked](https://help.octaneai.com/en/articles/3308186-how-octane-ai-revenue-quiz-analytics-are-tracked.md): Understanding Attribution, Cookies, and Best Practices for Accurate Data Syncing
+- [Finding and Using Lists in Octane AI](https://help.octaneai.com/en/articles/1866488-finding-and-using-lists-in-octane-ai.md): Accurately target your audience
+- [Guide on SMS Marketing Compliance](https://help.octaneai.com/en/articles/5810720-guide-on-sms-marketing-compliance.md): Suggestions to help you keep your Shopify store's SMS opt-ins and campaigns compliant with SMS marketing rules and laws.
+- [How do I change the currency in my Octane AI account?](https://help.octaneai.com/en/articles/4231339-how-do-i-change-the-currency-in-my-octane-ai-account.md): How to determine the currency used for your Octane AI analytics
+- [Help! I lost my password / How do I change my password?](https://help.octaneai.com/en/articles/1866594-help-i-lost-my-password-how-do-i-change-my-password.md): How to reset your password
+- [How do I connect multiple stores to my account?](https://help.octaneai.com/en/articles/2403531-how-do-i-connect-multiple-stores-to-my-account.md): Connect multiple Shopify stores to your Octane AI account
+- [Adding Octane AI's script manually to your store's theme](https://help.octaneai.com/en/articles/3738927-adding-octane-ai-s-script-manually-to-your-store-s-theme.md): Manual script injection and load without jQuery.
+- [Privacy, GDPR and Octane AI](https://help.octaneai.com/en/articles/1943667-privacy-gdpr-and-octane-ai.md): Understand how Octane AI helps you preserve user privacy
+- [Requesting a Shopify Customer's Data](https://help.octaneai.com/en/articles/6092823-requesting-a-shopify-customer-s-data.md): How to receive Octane AI data if it's available for a specific Shopify customer.
+- [Collecting Opt-ins and Consent with GDPR Compliance](https://help.octaneai.com/en/articles/5551358-collecting-opt-ins-and-consent-with-gdpr-compliance.md): \#gdpr \#opt-in \#quiz
+
+## Developer Docs
+
+- [Understanding the Octane AI Developer Tools and JavaScript Events](https://help.octaneai.com/en/articles/6092557-understanding-the-octane-ai-developer-tools-and-javascript-events.md): An overview of the options offered by our Developer Tools, such as customizing the default add to cart button behavior, results page behavior, and how to run custom scripts using our quiz's JavaScr...
+- [Using the octane.quiz.completed Event to Run Code on Quiz Completion](https://help.octaneai.com/en/articles/9553162-using-the-octane-quiz-completed-event-to-run-code-on-quiz-completion.md): \#customize \#developer \#event \#javascript \#quiz
+- [Using the octane.quiz.questionLoaded Event to Run Code When a Question is Loaded](https://help.octaneai.com/en/articles/9556860-using-the-octane-quiz-questionloaded-event-to-run-code-when-a-question-is-loaded.md): \#customize \#developer \#event \#javascript \#quiz
+- [Using the octane.quiz.questionAnswered Event to Run Code When Moving on From a Page](https://help.octaneai.com/en/articles/9557286-using-the-octane-quiz-questionanswered-event-to-run-code-when-moving-on-from-a-page.md): \#customize \#developer \#event \#javascript \#quiz
+- [How to Use Custom CSS in Your Quiz](https://help.octaneai.com/en/articles/8179591-how-to-use-custom-css-in-your-quiz.md): This article will show you how to enable custom CSS classes for your quiz, how to add custom CSS to your page to target the quiz, how the quiz's HTML is structured, and how the CSS classes are name...
+- [Redirecting to a Custom URL on Quiz Completion with Javascript](https://help.octaneai.com/en/articles/9015223-redirecting-to-a-custom-url-on-quiz-completion-with-javascript.md): \#developer \#quiz \#redirect
+- [Adding Custom Javascript Without Editing Theme Code in Shopify](https://help.octaneai.com/en/articles/9149980-adding-custom-javascript-without-editing-theme-code-in-shopify.md): \#custom-event \#developer \#javascript \#quizzes
+- [How Our Clients Set Up Octane AI For Headless Stores](https://help.octaneai.com/en/articles/10003043-how-our-clients-set-up-octane-ai-for-headless-stores.md): Key Notes for Using Our Quizzes with Headless Frameworks
+- [Programmatically Submit Opt-In Information in Your Quizzes](https://help.octaneai.com/en/articles/10306519-programmatically-submit-opt-in-information-in-your-quizzes.md): Remove redundancy in the opt-in process.
+- [Octane AI is Not Working with my Custom Slide-Out / Tray Shopping Cart](https://help.octaneai.com/en/articles/6869664-octane-ai-is-not-working-with-my-custom-slide-out-tray-shopping-cart.md): How to use quizzes with slide-out carts, tray carts, gift apps and many other 3rd party cart apps in Shopify.

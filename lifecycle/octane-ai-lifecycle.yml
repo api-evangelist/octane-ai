@@ -1,0 +1,37 @@
+generated: '2026-08-13'
+method: probed
+source: live probes of octaneai.com + the Octane AI help center
+summary: >-
+  Octane AI publishes no API lifecycle posture, because it publishes no public
+  API. No versioning scheme, no deprecation/sunset policy, no SLA, and no status
+  page were found on any host it controls. Product changes are announced inside
+  help-center articles rather than in a dated changelog.
+versioning:
+  scheme: none-published
+  current: null
+  docs: null
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No deprecation or Sunset/Deprecation (RFC 8594) policy is published.
+sla:
+  url: null
+  uptime_target: null
+  note: >-
+    No SLA is published. The Enterprise/custom tier is sold with a dedicated
+    Slack channel and phone support, but no uptime commitment is stated publicly.
+status_page: null
+deprecated_operations: []
+evidence:
+- {url: 'https://status.octaneai.com', status: NXDOMAIN}
+- {url: 'https://octaneai.com/status', status: 404}
+- {url: 'https://octaneai.com/changelog', status: 404}
+- {url: 'https://octaneai.com/whats-new', status: 404}
+- {url: 'https://octaneai.com/roadmap', status: 404}
+- {url: 'https://help.octaneai.com/llms.txt', status: 200, note: 'help-center index of 174 articles; no changelog/product-updates section'}
+product_change_signal:
+  note: >-
+    Product changes surface as dated statements inside help-center articles
+    (e.g. "On February 11, 2025, we released a new and improved editor"), not as
+    a structured release feed. Not enough for a ChangeLog artifact.
+  example: https://help.octaneai.com/en/articles/10546984-how-to-use-the-octane-ai-quiz-editor

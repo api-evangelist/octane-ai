@@ -1,0 +1,69 @@
+generated: '2026-08-13'
+method: probed
+source: live GET probes of every Octane AI host in apis.yml
+summary: >-
+  No /.well-known/ document is served by Octane AI on any host it controls.
+  octaneai.com returns a real 404 on every well-known path. app.octaneai.com is a
+  single-page-app catch-all that answers HTTP 200 with an HTML shell for every
+  path probed, including paths that cannot exist — those 200s are NOT documents
+  and are recorded as misses. help.octaneai.com (the Intercom-hosted help center)
+  does serve a security.txt, but it is INTERCOM'S vendor document
+  (Canonical: https://app.intercom.com/.well-known/security.txt, Contact:
+  security@intercom.com, bugcrowd.com/intercom) and says nothing about Octane AI,
+  so it is recorded as evidence only and is not credited to Octane AI.
+  No WellKnown / SecurityTxt pointer is emitted in apis.yml as a result.
+hosts:
+- host: https://octaneai.com
+  role: website
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://app.octaneai.com
+  role: application dashboard
+  note: >-
+    SPA catch-all — every path returns HTTP 200 with an HTML shell
+    (content-type text/html). Treated as a miss on every path, per the
+    soft-200 rule; no document was served.
+  documents:
+  - {path: /.well-known/security.txt, status: 200, document: false, body: html-spa-shell}
+  - {path: /.well-known/openid-configuration, status: 200, document: false, body: html-spa-shell}
+  - {path: /.well-known/oauth-authorization-server, status: 200, document: false, body: html-spa-shell}
+  - {path: /.well-known/api-catalog, status: 200, document: false, body: html-spa-shell}
+  - {path: /.well-known/ai-plugin.json, status: 200, document: false, body: html-spa-shell}
+  - {path: /.well-known/agent-card.json, status: 200, document: false, body: html-spa-shell}
+  - {path: /.well-known/agent.json, status: 200, document: false, body: html-spa-shell}
+- host: https://help.octaneai.com
+  role: documentation (Intercom-hosted help center)
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    document: true
+    file: octane-ai-help-center-intercom-security.txt
+    owner: Intercom
+    credited: false
+    note: >-
+      Served by Intercom for the Intercom platform, not by Octane AI for Octane
+      AI. Canonical points at app.intercom.com; contacts are security@intercom.com
+      and bugcrowd.com/intercom. Not evidence of an Octane AI disclosure program.
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - path: /llms.txt
+    status: 200
+    document: true
+    owner: Octane AI
+    credited: true
+    file: ../llms/octane-ai-llms.txt
+    note: Octane AI Help Center llms.txt, 174 lines, saved verbatim.
+- host: api.octaneai.com
+  role: guessed API host
+  status: NXDOMAIN
+  note: Does not resolve — Octane AI publishes no api.* host.

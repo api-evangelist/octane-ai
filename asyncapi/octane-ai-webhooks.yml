@@ -1,0 +1,59 @@
+generated: '2026-08-13'
+method: searched
+source: https://help.octaneai.com/en/articles/5679805-how-do-i-find-my-account-s-api-key-webhook-secret.md
+spec_type: none
+docs:
+  credentials: https://help.octaneai.com/en/articles/5679805-how-do-i-find-my-account-s-api-key-webhook-secret
+  zapier: https://help.octaneai.com/en/articles/5683555-getting-started-with-zapier
+  alloy: https://help.octaneai.com/en/articles/5509700-getting-started-with-alloy
+summary: >-
+  Octane AI publishes no AsyncAPI document. It does operate a real outbound event
+  surface: each account carries a single API key, a bot ID, and a webhook secret
+  (surfaced in dashboard Settings → General settings and in each integration's
+  Setup modal), and automation platforms subscribe to Octane AI customer events
+  through it. The events below are the ones Octane AI documents by name in its
+  Zapier integration. No payload schema, delivery/retry policy, signature
+  algorithm, or subscription-management API is published, so this artifact is a
+  webhook catalog rather than a machine-readable event contract — it is recorded
+  as type Webhooks, not AsyncAPI.
+authentication:
+  credentials: [api_key, bot_id, webhook_secret]
+  webhook_verification: >-
+    Per-account webhook secret used to verify authenticity of delivered payloads.
+    The signing scheme/header is not documented publicly.
+  reference: authentication/octane-ai-authentication.yml
+events:
+- name: Customer Created
+  channel: zapier-trigger
+  fires_on: >-
+    A new customer is added inside Octane AI — an email, SMS, or Facebook
+    Messenger opt-in.
+  payload_schema: not-published
+  source: https://help.octaneai.com/en/articles/5683555-getting-started-with-zapier
+- name: Customer Updated
+  channel: zapier-trigger
+  fires_on: >-
+    An existing Octane AI customer record is updated — for example when a shopper
+    retakes a product-recommendation quiz.
+  payload_schema: not-published
+  source: https://help.octaneai.com/en/articles/5683555-getting-started-with-zapier
+payload_content:
+  description: >-
+    Both triggers carry the customer's opt-in data plus Octane AI custom
+    properties (zero-party data captured in a quiz or conversational pop-up),
+    which is what downstream apps map into their own fields.
+  reference: https://help.octaneai.com/en/articles/5510035-introduction-to-custom-properties
+consumers:
+- {name: Zapier, kind: automation, auth: api_key + bot_id}
+- {name: Alloy, kind: automation, auth: api_key + bot_id, note: Octane AI is offered as a workflow trigger source}
+not_events:
+  note: >-
+    The octane.quiz.* family (octane.quiz.completed, questionLoaded,
+    questionAnswered, addToCart, addToCartError, accessed, viewCart,
+    goToCheckout, goToProductPage) are browser DOM CustomEvents dispatched by the
+    storefront quiz widget, NOT server-delivered webhooks. They are captured in
+    conventions/octane-ai-conventions.yml and must not be read as an event API.
+gaps:
+- No AsyncAPI or event-schema document is published.
+- No payload examples, no signature header/algorithm, no retry or ordering policy.
+- No webhook subscription/management endpoints; subscription happens inside partner platforms.

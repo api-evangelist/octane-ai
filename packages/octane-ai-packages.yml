@@ -1,0 +1,30 @@
+generated: '2026-08-13'
+method: searched
+source: registry + GitHub org searches (see checked[])
+packages: []
+package_count: 0
+official_sdk_count: 0
+note: >-
+  Octane AI publishes no client libraries. There is no public REST API to wrap:
+  the developer surface is a storefront JavaScript event API delivered by the
+  Octane AI quiz script (injected via the Shopify theme app extension or a manual
+  snippet, unpinned and not distributed through any registry or CDN package), so
+  there is no version or publish date a consumer could pin or audit. The public
+  GitHub org holds three repositories, none of them an SDK: two upstream forks
+  (parquet_s3_fdw, tortoise-orm, last pushed 2022/2023) and hydrogen-test, an
+  untouched TypeScript scratch repo (last pushed 2023-12-06). No Packages or SDKs
+  pointer is emitted in apis.yml — an empty shelf must not be scored as a shelf.
+checked:
+- {registry: npm, query: 'octane-ai', result: no first-party package}
+- {registry: npm, query: 'octaneai', result: 0 results}
+- {registry: pypi, query: 'octaneai', result: 404}
+- {registry: github, org: 'https://github.com/OctaneAI', public_repos: 3, result: no SDK/client library}
+distribution:
+  kind: cdn-script
+  registry: null
+  version: null
+  pinned: false
+  note: >-
+    The storefront quiz script is loaded by the Shopify theme app extension or a
+    hand-added snippet; the URL is not version-pinned and no registry metadata
+    endpoint exists, so neither we nor a merchant can tell which build is served.

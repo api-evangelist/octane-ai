@@ -1,0 +1,23 @@
+generated: '2026-08-13'
+method: searched
+source: https://help.octaneai.com/en/collections/9496268-developer-docs
+docs: https://octaneai.com/pricing
+limit_count: 0
+rate_limits: []
+response_headers: []
+note: >-
+  Octane AI publishes no rate limits. There is no public REST API to rate-limit:
+  the developer surface is the client-side octane.quiz.* JavaScript event API
+  plus a per-account API key + bot ID consumed by Zapier and Alloy, and neither
+  the help center nor the pricing page documents request quotas, throttles,
+  RateLimit-*/X-RateLimit-* response headers, or a 429 contract. The only
+  published consumption ceiling is commercial rather than protocol-level: a
+  monthly credit allowance per plan (1 credit = 1 quiz engagement, AI features
+  consume fractional credits), with overage billed at $0.10 per credit rather
+  than blocked — see plans/octane-ai-plans-pricing.yml. An honest zero, recorded.
+consumption_model:
+  kind: credits
+  unit: 1 credit = 1 quiz engagement
+  enforcement: billed-overage (service is not interrupted when credits run out)
+  overage: $0.10 per credit
+  source: https://octaneai.com/pricing
