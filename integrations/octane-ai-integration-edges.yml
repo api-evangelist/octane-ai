@@ -1,0 +1,176 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/octane-ai/integrations
+checked:
+- https://composio.dev/toolkits/octane-ai
+- https://monid.ai/tools/octane-ai
+- https://n8n.io/integrations/octane-ai/
+- https://n8n.io/integrations/octane/
+- https://zapier.com/apps/octane-ai/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: octane-ai
+  url: https://zapier.com/apps/octane-ai/integrations
+  external_url: https://www.octaneai.com/
+  partner_tier: BRONZE
+  triggers:
+  - key: customer_updated
+    label: Customer Updated
+  - key: new_customer
+    label: Customer Created
+  actions: []
+  searches: []
+edges:
+- partner_name: Shopify
+  partner: shopify
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/octane-ai/integrations/shopify
+  direction: third-party
+  category: eCommerce
+  partner_url: https://www.shopify.com/
+- partner_name: Klaviyo
+  partner: klaviyo
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/octane-ai/integrations/klaviyo
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.klaviyo.com/
+- partner_name: Yotpo
+  partner: yotpo
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/octane-ai/integrations/yotpo
+  direction: third-party
+  category: Commerce
+  partner_url: https://yotpo.com/
+- partner_name: Trello
+  partner: trello
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/octane-ai/integrations/trello
+  direction: third-party
+  category: Project Management
+  partner_url: https://trello.com/
+- partner_name: Facebook Lead Ads
+  partner: facebook-lead-ads
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/octane-ai/integrations/facebook-lead-ads
+  direction: third-party
+  category: Ads & Conversion
+  partner_url: https://www.facebook.com/business/ads/lead-ads
+- partner_name: Campaign Monitor
+  partner: campaignmonitor
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/octane-ai/integrations/campaign-monitor
+  direction: third-party
+  category: Email Newsletters
+  partner_url: https://go.campaignmonitor.com/partner-referral?referring_partner=Zapier
+- partner_name: LMN
+  partner: null
+  partner_match: null
+  partner_candidate: zapier
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/octane-ai/integrations/lmn
+  direction: third-party
+  category: Sales & CRM
+  partner_url: https://zapier.com/www.golmn.com
+- partner_name: Perfex CRM
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/octane-ai/integrations/perfex-crm
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://themesic.com/
+templates:
+- title: Update Google Sheets rows when customers are updated in Octane AI
+  url: https://zapier.com/apps/google-sheets/integrations/octane-ai/255642298/update-google-sheets-rows-when-customers-are-updated-in-octane-ai
+  apps:
+  - octane-ai
+  - google-sheets
+- title: Get Slack channel messages for new Octane AI customers
+  url: https://zapier.com/apps/octane-ai/integrations/slack/799399/get-slack-channel-messages-for-new-octane-ai-customers
+  apps:
+  - octane-ai
+  - slack
+- title: Create rows Google Sheets spreadsheets for new customers in Octane AI
+  url: https://zapier.com/apps/google-sheets/integrations/octane-ai/799402/create-rows-google-sheets-spreadsheets-for-new-customers-in-octane-ai
+  apps:
+  - octane-ai
+  - google-sheets
+- title: Subscribe new Octane AI customers with phone numbers to Attentive
+  url: https://zapier.com/apps/attentive/integrations/octane-ai/799449/subscribe-new-octane-ai-customers-with-phone-numbers-to-attentive
+  apps:
+  - octane-ai
+  - attentive
+- title: Add custom properties in Attentive for new Octane AI customers
+  url: https://zapier.com/apps/attentive/integrations/octane-ai/799453/add-custom-properties-in-attentive-for-new-octane-ai-customers
+  apps:
+  - octane-ai
+  - attentive
+- title: Add newly-updated custom properties from Octane AI customers to Attentive
+  url: https://zapier.com/apps/attentive/integrations/octane-ai/799456/add-newly-updated-custom-properties-from-octane-ai-customers-to-attentive
+  apps:
+  - octane-ai
+  - attentive
+- title: Add new Octane AI customers as Mailchimp subscribers
+  url: https://zapier.com/apps/mailchimp/integrations/octane-ai/799465/add-new-octane-ai-customers-as-mailchimp-subscribers
+  apps:
+  - octane-ai
+  - mailchimp
+- title: Create/update Mailchimp subscribers when new Octane AI customers are updated
+  url: https://zapier.com/apps/mailchimp/integrations/octane-ai/799471/createupdate-mailchimp-subscribers-when-new-octane-ai-customers-are-updated
+  apps:
+  - octane-ai
+  - mailchimp
+- title: Subscribe new Octane AI customers in Omnisend
+  url: https://zapier.com/apps/octane-ai/integrations/omnisend/799473/subscribe-new-octane-ai-customers-in-omnisend
+  apps:
+  - octane-ai
+  - omnisend
+- title: Update Omnisend subscribers from newly updated customers in Octane AI
+  url: https://zapier.com/apps/octane-ai/integrations/omnisend/799480/update-omnisend-subscribers-from-newly-updated-customers-in-octane-ai
+  apps:
+  - octane-ai
+  - omnisend
+- title: Subscribe new Octane AI customers to Mailgun lists
+  url: https://zapier.com/apps/mailgun/integrations/octane-ai/799485/subscribe-new-octane-ai-customers-to-mailgun-lists
+  apps:
+  - octane-ai
+  - mailgun
+- title: Add new Octane AI customers as Postscript subscribers
+  url: https://zapier.com/apps/octane-ai/integrations/postscript-1/894198/add-new-octane-ai-customers-as-postscript-subscribers
+  apps:
+  - octane-ai
+  - postscript-1
+template_total: 33
