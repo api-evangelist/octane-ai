@@ -8,6 +8,7 @@ checked:
 - https://n8n.io/integrations/octane-ai/
 - https://n8n.io/integrations/octane/
 - https://zapier.com/apps/octane-ai/integrations
+- shopify/integrations/shopify-integration-edges.yml
 summary: null
 marketplace_apps:
 - marketplace: zapier
@@ -112,6 +113,24 @@ edges:
   direction: third-party
   category: CRM (Customer Relationship Management)
   partner_url: https://themesic.com/
+- partner_name: Shopify (own)
+  partner: shopify
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://apps.shopify.com/octane-ai-quiz-personalization
+  mirror_of: shopify/integrations/shopify-integration-edges.yml
+  apps:
+  - 'Octane AI: Advanced Quiz Maker'
+  listing_count: 1
+  detected: '2026-10-15'
+  detected_by: mirror-platform-listings.py
+  publisher_verified:
+  - Built for Shopify
 templates:
 - title: Update Google Sheets rows when customers are updated in Octane AI
   url: https://zapier.com/apps/google-sheets/integrations/octane-ai/255642298/update-google-sheets-rows-when-customers-are-updated-in-octane-ai
