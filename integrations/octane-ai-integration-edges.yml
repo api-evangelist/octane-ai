@@ -7,6 +7,7 @@ checked:
 - https://monid.ai/tools/octane-ai
 - https://n8n.io/integrations/octane-ai/
 - https://n8n.io/integrations/octane/
+- https://zapier.com/api/v4/apps/
 - https://zapier.com/apps/octane-ai/integrations
 - shopify/integrations/shopify-integration-edges.yml
 summary: null
@@ -131,6 +132,31 @@ edges:
   detected_by: mirror-platform-listings.py
   publisher_verified:
   - Built for Shopify
+- partner_name: Zapier
+  partner: zapier
+  partner_match: aggregator
+  type: marketplace
+  marketplace: zapier-directory
+  channel: ipaas-listing
+  relationship: ipaas-bridge
+  direction: third-party
+  evidence: https://zapier.com/apps/octane-ai/integrations
+  category: null
+  contract_reference:
+    register: Zapier app directory (zapier.com/api/v4/apps)
+    spec_file: null
+    role: ipaas-connector:zapier
+    registered_name: Octane AI
+    matched_domain: octaneai.com
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    app_slug: octane-ai
+    beta: false
+    builder: unknown (not in the directory record)
+  detected_by: sweep-workflow-automation.py
+  first_seen: '2026-10-15'
 templates:
 - title: Update Google Sheets rows when customers are updated in Octane AI
   url: https://zapier.com/apps/google-sheets/integrations/octane-ai/255642298/update-google-sheets-rows-when-customers-are-updated-in-octane-ai
