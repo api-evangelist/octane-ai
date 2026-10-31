@@ -64,6 +64,109 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Octane AI is a company surfaced as a portfolio company of bullpen-capital, general-catalyst and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Octane AI is an AI-powered quiz and product-recommendation platform for Shopify merchants, turning storefront browsers into buyers with no-code personalized quizzes, zero-party data capture, and its CORE-1 recommendation engine. It integrates with 50+ marketing, CRM, and automation tools (Klaviyo, Attentive, Postscript, Recharge, Gorgias, Zapier, Alloy) and syncs shopper data in real time. Its developer surface is client-side rather than a public REST API: an embeddable quiz widget that dispatches a documented set of browser JavaScript events (octane.quiz.*), custom CSS/JS injection hooks, a headless-store integration path, and a per-account API key plus webhook secret used for integrations and outbound webhook verification. Backed by Bullpen Capital and General Catalyst.
 
-Backed by: bullpen-capital, general-catalyst — https://octaneai.com
+**Areas:** Company · Shopify · E-Commerce · Product Recommendations · Quizzes · Personalization · Zero-Party Data · Marketing · Conversion Optimization · Artificial Intelligence
+
+## Octane AI on APIs.io
+
+Everything profiled for Octane AI is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/octane-ai/](https://apis.io/providers/octane-ai/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Octane Ai Webhooks](https://apis.io/asyncapis/octane-ai/octane-ai-webhooks/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Octane Ai Authentication](https://apis.io/security/octane-ai/octane-ai-authentication/)
+- [Octane Ai Domain Security](https://apis.io/security/octane-ai/octane-ai-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Octane Ai Plans Pricing](https://apis.io/plans/octane-ai/octane-ai-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Octane Ai Rate Limits](https://apis.io/rate-limits/octane-ai/octane-ai-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://octaneai.com)
+- [Documentation](https://help.octaneai.com)
+- [Getting started](https://help.octaneai.com/en/articles/4346619-getting-started-with-quizzes)
+- [Pricing](https://octaneai.com/pricing)
+- [Sign up](https://app.octaneai.com/dashboard/sign-up)
+- [Support](https://help.octaneai.com)
+- [Blog](https://octaneai.com/blog)
+- [Terms of service](https://octaneai.com/terms)
+- [Privacy policy](https://octaneai.com/privacy)
+- [GitHub](https://github.com/octaneai)
+
+## API Evangelist rating
+
+**Kin Score 45.3** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 50.0 |
+| Access clarity | 69.7 |
+
+**Agent readiness 22.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 22.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/octane-ai/](https://apis.io/providers/octane-ai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Octane AI: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/octane-ai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
